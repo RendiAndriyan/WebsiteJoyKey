@@ -1,5 +1,28 @@
 // Wishlist Functionality
 const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+<<<<<<< HEAD
+
+wishlistButtons.forEach(btn => {
+    btn.addEventListener('click', function () {
+        this.classList.toggle('active');
+
+        const icon = this.querySelector('i');
+        if (this.classList.contains('active')) {
+            icon.classList.remove('fa-regular');
+            icon.classList.add('fa-solid');
+        } else {
+            icon.classList.remove('fa-solid');
+            icon.classList.add('fa-regular');
+        }
+    });
+});
+document.querySelectorAll('.detail-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+        alert('Detail produk dibuka');
+    });
+});
+
+=======
 const wishlist = {};
 
 wishlistButtons.forEach(btn => {
@@ -16,6 +39,7 @@ wishlistButtons.forEach(btn => {
         }
     });
 });
+>>>>>>> 204ce530caa945143249e25e5cb1bea85aa9f2a7
 
 // Share Functionality
 const shareButtons = document.querySelectorAll('.share-btn');
@@ -81,6 +105,9 @@ productNames.forEach(name => {
     });
 });
 
+<<<<<<< HEAD
+
+=======
 // See More Link
 const seeMoreLink = document.querySelector('.see-more a');
 
@@ -88,6 +115,7 @@ seeMoreLink.addEventListener('click', function(e) {
     e.preventDefault();
     alert('Memuat produk lebih banyak...');
 });
+>>>>>>> 204ce530caa945143249e25e5cb1bea85aa9f2a7
 
 // Navigation Active State
 const navLinks = document.querySelectorAll('.nav-menu a');

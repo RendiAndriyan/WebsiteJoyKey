@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* ===== WARNA FOOTER (LANGSUNG JADI) ===== */
+:root {
+    --footer-pink: #F7B7CE;
+    --primary-yellow: #FFE43D;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #101750;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TOP BORDER */
+.top-border {
+    height: 40px;
+    background-color: #FFE43D;
+}
+
+/* HEADER */
+header {
+    background: #ffffff;
+    padding: 8px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* LOGO */
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 90px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: 700;
+    color: #101750;
+}
+
+/* NAV */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    font-weight: 500; /* TIDAK BOLD */
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: #FB2E86;
+}
+
+/* TITLE */
+.page-title {
+    background-color: #FFF0E8;
+    padding: 30px 0;
+}
+
+.page-title h2 {
+    font-size: 28px;
+    color: #101750;
+}
+
+/* CONTACT SECTION */
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin: 80px auto;
+}
+
+/* IMAGE */
+.contact-image img {
+    max-width: 100%;
+    transform: rotate(-5deg);
+}
+
+/* INFO BOX */
+.contact-info-box {
+    background-color: #FFF0E8;
+    padding: 40px;
+    max-width: 420px;
+}
+
+.contact-info-box h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+/* === PERBAIKAN SEJAJAR ICON + TEKS (INFO KONTAK) === */
+.info-item,
+.social-item {
+    display: flex;
+    align-items: flex-start; /* KUNCI SEJAJAR */
+    gap: 15px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.info-item i,
+.social-item i {
+    width: 20px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--footer-pink);
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #101750;
+    font-weight: 700;
+}
+
+.footer-col p,
+.footer-col li {
+    font-size: 13px;
+    color: #101750;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+/* === PERBAIKAN SEJAJAR ICON + TEKS (FOOTER) === */
+.footer-col ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-col ul li i {
+    width: 18px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #101750;
+}
+
+.copyright-text {
+    margin-top: 20px;
+    opacity: 0.7;
+    font-size: 12px;
+    color: #101750;
+}
+
+/* Bottom Yellow Strip */
+.bottom-bar {
+    height: 40px;
+    background-color: var(--primary-yellow);
+    width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}

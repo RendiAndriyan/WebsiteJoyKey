@@ -1,5 +1,6 @@
 // Wishlist Functionality
 const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+<<<<<<< HEAD
 
 wishlistButtons.forEach(btn => {
     btn.addEventListener('click', function () {
@@ -21,6 +22,24 @@ document.querySelectorAll('.detail-btn').forEach(btn => {
     });
 });
 
+=======
+const wishlist = {};
+
+wishlistButtons.forEach(btn => {
+    const id = btn.getAttribute('data-id');
+    wishlist[id] = false;
+
+    btn.addEventListener('click', function() {
+        wishlist[id] = !wishlist[id];
+        
+        if (wishlist[id]) {
+            this.classList.add('active');
+        } else {
+            this.classList.remove('active');
+        }
+    });
+});
+>>>>>>> 204ce530caa945143249e25e5cb1bea85aa9f2a7
 
 // Share Functionality
 const shareButtons = document.querySelectorAll('.share-btn');
@@ -86,7 +105,17 @@ productNames.forEach(name => {
     });
 });
 
+<<<<<<< HEAD
 
+=======
+// See More Link
+const seeMoreLink = document.querySelector('.see-more a');
+
+seeMoreLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    alert('Memuat produk lebih banyak...');
+});
+>>>>>>> 204ce530caa945143249e25e5cb1bea85aa9f2a7
 
 // Navigation Active State
 const navLinks = document.querySelectorAll('.nav-menu a');

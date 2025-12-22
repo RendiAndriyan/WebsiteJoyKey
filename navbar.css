@@ -1,0 +1,59 @@
+.top-bar {
+    height: 30px;
+    background-color: #FCC43E; /* kuning */
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* logo kiri, menu kanan */
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar .logo span {
+    font-weight: 700;
+    font-size: 24px;
+    color: #0A0A33;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #0A0A33;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #FCC43E;
+}
+
+.navbar nav a.active {
+    color: #FF5C8D; /* pink menu aktif */
+}
+
+.navbar .search-icon {
+    margin-left: 30px;
+    font-size: 18px;
+    color: #0A0A33;
+    cursor: pointer;
+}
